@@ -1,3 +1,4 @@
 #! /bin/sh -
 
+mkdir FMPirate/bin
 cd FMPirate/src; javac fmpirate/*.java -d ../bin/
