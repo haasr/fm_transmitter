@@ -24,7 +24,7 @@ To compile this project use commands below:
 
 .. code:: bash
 
-    sudo apt-get install make gcc g++ openjdk-8-jdk
+    sudo apt install make gcc g++ openjdk-8-jdk
     make
     ./compile-fmpirate
 
