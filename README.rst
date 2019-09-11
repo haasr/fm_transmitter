@@ -52,6 +52,7 @@ by a pipe ('|') delimeter and a specified amount of gain
 no need to delimit them with backslashes. Below is a sample playlist file:
 
 ::
+
     # playlist.txt -- must use txt extension.
     Ride.wav|gain +5
     # you can insert comments like this.
@@ -61,7 +62,7 @@ no need to delimit them with backslashes. Below is a sample playlist file:
     Good Vibrations.wav|gain +5
     Bad Moon Rising.wav|gain +5 # this comment will break things.
 
-As you can see above, you must use a txt file format. While you may comments
+As you can see above, you must use a txt file format. While you may comment
 lines by starting them with a pound sign, do not put comments on the same
 line as a song; fmpirate will not play nicely with the last line in the
 example text file. While it is recommended you save your playlist files
