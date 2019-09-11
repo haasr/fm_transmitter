@@ -1,0 +1,3 @@
+#! /bin/sh -
+
+cd FMPirate/src; javac fmpirate/*.java -d ../bin/

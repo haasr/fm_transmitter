@@ -1,0 +1,5 @@
+#! /bin/sh -
+
+path=$(pwd)
+echo $path > FMPirate/.path/path.txt
+cd FMPirate/bin; java fmpirate.ControllerDriver

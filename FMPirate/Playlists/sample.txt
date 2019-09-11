@@ -1,0 +1,2 @@
+# sample playlist
+acoustic_guitar_duet.wav|gain +2
