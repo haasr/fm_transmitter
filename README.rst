@@ -13,6 +13,9 @@ makes possible to run it on all kind of boards. This project was forked from *ma
 meaning I didn't do the hard part; I just made a nifty little Java GUI to make creating
 and transmitting playlists easier.
 
+The play icon, stop icon, and shuffle icon located in "fmpirate/FMPirate/res/assets/"
+are from [https://smashicons.com/]. Thanks for the awesome free icons!
+
 Setup:
 ------
 
