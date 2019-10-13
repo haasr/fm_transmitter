@@ -460,6 +460,8 @@
 
 						 System.out.println("\nplaylistProcess started\n");
 
+						 // File is playing.
+						 playFile = true;
 						 // Program will use PlaylistShuffle.getPath() to get playlist next time play btn pushed.
 						 shuffled = true;
 
@@ -487,7 +489,7 @@
 				 {
 					 playlistProcess.destroy( );
 					 playlistProcess.waitFor( );
-					 playlistProcess = Runtime.getRuntime( ).exec("sudo killall fm_transmitter");
+					 playlistProcess = Runtime.getRuntime( ).exec("sudo killall sox");
 
 					 System.out.println("playlistProcess destroyed");
 				 }
@@ -613,7 +615,7 @@
 					 {
 						 playlistProcess.destroy( );
 						 playlistProcess.waitFor( );
-						 playlistProcess = Runtime.getRuntime( ).exec("sudo killall fm_transmitter");
+						 playlistProcess = Runtime.getRuntime( ).exec("sudo killall sox");
 
 						 System.out.println("playlistProcess destroyed");
 
@@ -674,7 +676,7 @@
 						 playlistProcess.destroy( );
 						 playlistProcess.waitFor( );
 
-						 playlistProcess = Runtime.getRuntime( ).exec("sudo killall fm_transmitter");
+						 playlistProcess = Runtime.getRuntime( ).exec("sudo killall sox");
 
 						 System.out.println("playlistProcess destroyed");
 
