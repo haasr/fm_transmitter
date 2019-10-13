@@ -8,8 +8,9 @@ communication. It is based on idea originaly posted here:
 [http://icrobotics.co.uk/wiki/index.php/Turning_the_Raspberry_Pi_Into_an_FM_Transmitter],
 but does not use DMA controller in order to distribute samples to output (clock generator),
 so sound quality is worse as in PiFm project and only mono transmition is available but this
-makes possible to run it on all kind of boards. This project was forked from *markondej*
-meaning I didn't do the hard part; I just made a nifty little Java GUI to make creating
+makes possible to run it on all kind of boards. 
+
+This project was forked from *markondej* meaning I didn't do the hard part; I just made a nifty little Java GUI to make creating
 and transmitting playlists easier.
 
 The play icon, stop icon, and shuffle icon located in "fmpirate/FMPirate/res/assets/"
