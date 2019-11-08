@@ -1,1 +1,1 @@
-/home/pi/fmpirate
+/home/ryan/Github/repos/fmpirate
