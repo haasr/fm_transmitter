@@ -451,7 +451,7 @@
 			 {
 				 try
 				 {
-					 try { time.sleep(500); } // Gives a bit of time for old process to be killed.
+					 try { time.sleep(600); } // Gives a bit of time for old process to be killed.
 					 catch (InterruptedException e){ }// Meh
 
 					 PlaylistManager.shuffle(playlist.getPath( ), frequency);
@@ -526,7 +526,7 @@
 
 				 try
 				 {
-					 try { time.sleep(500); } // Gives a bit of time for old process to be killed.
+					 try { time.sleep(600); } // Gives a bit of time for old process to be killed.
 					 catch (InterruptedException e){ }// Meh
 
 					 PlaylistManager.shuffle(playlist.getPath( ), frequency);
