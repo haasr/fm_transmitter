@@ -67,7 +67,7 @@
 	 // JSlider labels: frequency = baseValue + "." + deciValue if changed.
 	 private int baseValue      = 0;        // baseValue will be from 89 and 107.
 	 private int deciValue      = 0;        // deciValue will be from 0 to 9.
-	 private String frequency   = "102.1";  // Initial frequency if not changed.
+	 private String frequency   = "100.7";  // Initial frequency if not changed.
 
 	 private String filePath    = "";       // Path of playlist file as selected from JFileChooser.
 	                                        // which is created in .temp_files dir.
