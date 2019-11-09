@@ -79,7 +79,7 @@ public final class PlaylistManager
         playlistProcess.destroy( );
         // I have learned that actually killing SoX seems to be best way to ensure that multiple
         // SoX processes don't continue running over top of each other.
-        playlistProcess = Runtime.getRuntime( ).exec("sudo killall sox");
+        playlistProcess = Runtime.getRuntime( ).exec("killall sox");
     }
 
     /**
