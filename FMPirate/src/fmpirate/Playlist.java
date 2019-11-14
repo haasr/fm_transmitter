@@ -109,7 +109,9 @@ public class Playlist
 			{
 				String[] contents = textLine.split("\\|", 2);
 				pWriter.println("sox " + contents[0]
-						.replaceAll(" ", "\\\\ ") // Put an escape slash in front of each space.
+						.replaceAll(" ", "\\\\ ")   // Escape space
+						.replaceAll("\\'","\\\'")   // Escape single quote
+						.replaceAll("\\`", "\\\\`") // Escape that other apostrophe
 						+ " -r 22050 -c 1 -b 16 -t wav - "
 						+ contents[1] + " | sudo ./fm_transmitter -f " // contents[1] == gain.
 						+ frequency + " - ");
