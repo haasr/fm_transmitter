@@ -112,6 +112,8 @@ public class Playlist
 						.replaceAll(" ", "\\\\ ")   // Escape space
 						.replaceAll("\\'","\\\'")   // Escape single quote
 						.replaceAll("\\`", "\\\\`") // Escape that other apostrophe
+						.replaceAll("\\(", "\\\\(") // Escape left parenthesis
+						.replaceAll("\\)", "\\\\)") // Escape right parenthesis
 						+ " -r 22050 -c 1 -b 16 -t wav - "
 						+ contents[1] + " | sudo ./fm_transmitter -f " // contents[1] == gain.
 						+ frequency + " - ");
