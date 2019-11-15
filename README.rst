@@ -63,9 +63,9 @@ no need to delimit them with backslashes. Below is a sample playlist file:
     Redbone.wav|gain +0
     Hello-Goodbye.wav|gain +2
     Good Vibrations.wav|gain +5
-    Bad Moon Rising.wav|gain +5 # this comment will break things.
     # apostrophes and parentheses are accepted
     Ryan's song (feat. parentheses).wav|gain +5
+    Bad Moon Rising.wav|gain +5 # this comment will break things.
 
 As you can see above, you must use a txt file format. While you may comment
 lines by starting them with a pound sign, do not put comments on the same
