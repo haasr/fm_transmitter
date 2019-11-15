@@ -8,7 +8,7 @@ communication. It is based on idea originaly posted here:
 [http://icrobotics.co.uk/wiki/index.php/Turning_the_Raspberry_Pi_Into_an_FM_Transmitter],
 but does not use DMA controller in order to distribute samples to output (clock generator),
 so sound quality is worse as in PiFm project and only mono transmition is available but this
-makes possible to run it on all kind of boards. 
+makes possible to run it on all kind of boards.
 
 This project was forked from *markondej* meaning I didn't do the hard part; I just made a nifty little Java GUI to make creating
 and transmitting playlists easier.
@@ -64,14 +64,19 @@ no need to delimit them with backslashes. Below is a sample playlist file:
     Hello-Goodbye.wav|gain +2
     Good Vibrations.wav|gain +5
     Bad Moon Rising.wav|gain +5 # this comment will break things.
+    # apostrophes and parentheses are accepted
+    Ryan's song (feat. parentheses).wav|gain +5
 
 As you can see above, you must use a txt file format. While you may comment
 lines by starting them with a pound sign, do not put comments on the same
 line as a song; fmpirate will not play nicely with the last line in the
-example text file. While it is recommended you save your playlist files
-in "fmpirate/FMPirate/Playlists/" for quickest access, you may save them
-wherever you like. Of course, all the WAV files listed in the playlist
-MUST be in the root of the "fmpirate" directory.
+example text file. Additionally, special characters such as [~!?<>@#$%^&*+=]
+should not appear in the audio file names while apostrophes, dashes,
+underscores, and parentheses will be accepted.While it is recommended you save
+your playlist files in "fmpirate/FMPirate/Playlists/" for quickest access,
+you may save them wherever you like. Of course, all the WAV files listed in
+the playlist MUST be in the root of the "fmpirate" directory (where the
+guitar sample WAV file is located).
 
 Usage
 -----
