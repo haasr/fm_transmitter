@@ -101,30 +101,26 @@ public class Playlist
 			textLine = fileScanner.nextLine( ).replaceAll("'", "\\\\'");
 
 			if (textLine.trim( ).startsWith("#") || textLine.length( ) == 0) // Skip over comments and blank lines.
-			{
 				continue;
-			}
-
+			
 			else
 			{
 				String[] contents = textLine.split("\\|", 2);
 				pWriter.println("sox " + contents[0]
-						.replaceAll(" ", "\\\\ ") // Put an escape slash in front of each space.
+						.replaceAll(" ", "\\\\ ")   // Escape space
+						.replaceAll("\\'","\\\'")   // Escape single quote
+						.replaceAll("\\`", "\\\\`") // Escape that other apostrophe
+						.replaceAll("\\(", "\\\\(") // Escape left parenthesis
+						.replaceAll("\\)", "\\\\)") // Escape right parenthesis
 						+ " -r 22050 -c 1 -b 16 -t wav - "
 						+ contents[1] + " | sudo ./fm_transmitter -f " // contents[1] == gain.
 						+ frequency + " - ");
+
 				System.out.println("Printed song " + j);
 			}
 		}
 		pWriter.close( );
 	}
 
-	/**
-	 * Why doesn't java just have getter/setter properties by now?
-	 */
-	public String getPath ( )
-	{
-		return tempPath;
-	}
-
+	public String getPath ( ) { return tempPath; }
 }

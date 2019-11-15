@@ -52,17 +52,10 @@ public class ControllerDriver
 			System.exit(0);
 		}
 
-		SwingUtilities.invokeLater(
-				new Runnable( ) {
-					@Override
-					public void run()
-					{
-						new ControllerGUI("FM PiRate - fm_transmitter frontend",
-								SIZE, "../res/assets/fmpirate.png");
-					}
-				});
+		new ControllerGUI("FM PiRate - fm_transmitter frontend",
+				SIZE, "../res/assets/fmpirate.png");
 
-		deleteTempFiles();
+		deleteTempFiles(); // Clear all temp files on exit.
 	} // End main method.
 
 	/**

@@ -1,3 +1,0 @@
-#! /bin/bash -
-cd /home/pi/fmpirate
-sox acoustic_guitar_duet.wav -r 22050 -c 1 -b 16 -t wav - gain +2 | sudo ./fm_transmitter -f 102.1 - 
