@@ -124,12 +124,5 @@ public class Playlist
 		pWriter.close( );
 	}
 
-	/**
-	 * Why doesn't java just have getter/setter properties by now?
-	 */
-	public String getPath ( )
-	{
-		return tempPath;
-	}
-
+	public String getPath ( ){ return tempPath; }
 }
