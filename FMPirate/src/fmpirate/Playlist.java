@@ -101,10 +101,8 @@ public class Playlist
 			textLine = fileScanner.nextLine( ).replaceAll("'", "\\\\'");
 
 			if (textLine.trim( ).startsWith("#") || textLine.length( ) == 0) // Skip over comments and blank lines.
-			{
 				continue;
-			}
-
+			
 			else
 			{
 				String[] contents = textLine.split("\\|", 2);
@@ -124,5 +122,5 @@ public class Playlist
 		pWriter.close( );
 	}
 
-	public String getPath ( ){ return tempPath; }
+	public String getPath ( ) { return tempPath; }
 }
