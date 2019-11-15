@@ -156,5 +156,5 @@ public final class PlaylistManager
         playList.clear();
     } // End createTempFile method.
 
-    protected static String getPath(){return tempPath;}
+    protected static String getPath() {return tempPath;}
 }
