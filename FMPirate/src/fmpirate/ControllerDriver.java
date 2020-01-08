@@ -27,7 +27,7 @@ public class ControllerDriver
 {
 	/**
 	 * main attempts to recreate essential directories if they have been removed
-	 * and instantiates an instance of ControllerGUI on a new thread.
+	 * and instantiates an instance of ControllerGUI.
 	 *
 	 * <hr>
 	 * @param args
