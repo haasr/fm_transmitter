@@ -17,9 +17,8 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 /**
- * Driver class which instantiates ControllerGUI on a new thread and cleans up
- * after it by removing the the temporary files created in the ../.temp_files
- * directory while ControllerGUI was alive.
+ * Driver class which instantiates ControllerGUI and cleans up
+ * after it by removing the the temporary files created in the ../.temp_files.
  *
  * <hr>
  * @author Ryan Haas
