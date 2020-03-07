@@ -195,8 +195,8 @@
 		 container = new JPanel( );
 		 container.setLayout(new BoxLayout(this.container, BoxLayout.Y_AXIS));
 
-		 baseLabel = new JLabel("100"); // Default base frequency.
-		 deciLabel = new JLabel(".7"); // Default decimal frequency.
+		 baseLabel = new JLabel("102"); // Default base frequency.
+		 deciLabel = new JLabel(".1"); // Default decimal frequency.
 
 		 themePanels();
 	 } // End of initPanels method.
